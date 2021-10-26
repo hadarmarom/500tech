@@ -1,5 +1,8 @@
 import React from 'react';
 
+const ToBeCalledVariable = (corrData, config) => { 
+  return config[3].component({ data: corrData.Trailer })
+}
 const Grid = ({ config, data }) => (
   <table>
     <thead>
@@ -12,7 +15,7 @@ const Grid = ({ config, data }) => (
         <td>{corrData.imdbID}</td>
         <td>{corrData.Title}</td>
         <td>{corrData.imdbRating}</td>
-        <td>{config[3].component(corrData)}</td>
+        <td>{ToBeCalledVariable(corrData, config)}</td> 
       </tr>)}
     </tbody>
   </table>

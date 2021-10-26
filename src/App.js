@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Grid from './Grid';
 
-const Trailer = ({ Trailer }) => (
-  <a href={Trailer.url}
+const Trailer = ({ data }) => (
+    <a href={data.url}
     target="_blank"
     rel="noopener noreferrer">
     trailer...
